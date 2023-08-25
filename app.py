@@ -12,9 +12,9 @@ from langchain.document_loaders import TextLoader
 from langchain.document_loaders import Docx2txtLoader
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 import os
-from dotenv import load_dotenv, dotenv_values 
+from dotenv import load_dotenv
 import tempfile
- 
+
 
 load_dotenv()
 
@@ -79,7 +79,7 @@ def main():
     load_dotenv()
     # Initialize session state
     initialize_session_state()
-    st.title("Multi-Docs ChatBot by Abhinav")
+    st.title("Multi-Docs ChatBot by Abhinav 🤖")
     # Initialize Streamlit
     st.sidebar.title("Document Processing")
     uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
@@ -123,4 +123,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
